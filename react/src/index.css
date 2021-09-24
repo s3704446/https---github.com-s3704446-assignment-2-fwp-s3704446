@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(80, 78, 78);
+  color: white;
+  min-height: 100%;
+}
+
+/* logo */
+.logo{
+  width: 40%;
+  margin-top: 10%;
+  animation-name: logo-rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes logo-rotate{
+  100%{transform: rotate(360deg);}
+}
+
+/* navbar8 */
+nav{
+  background-color: rgba(101, 19, 148, 0.993);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+#navbar-logo{
+  background-color: rgba(67, 15, 97, 0.993);
+  width: 110%;
+  margin-left: -5%;
+  position: relative; 
+}
+.navbar-brand{
+  transition: color 0.5s;
+}
+.navbar-brand:hover{
+  color: rgb(219, 216, 216);
+}
+.navbar-brand{
+  color: white;
+  font-size: 30px;
+  margin-left: 3%;
+}
+.navbar-item{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+.navbar-item:hover{
+  background-color: rgba(67, 15, 97, 0.993);
+  color: white;
+}
+.nav-link{
+  color: white;
+  transition: color 0.5s;
+}
+.nav-link:hover{
+  color: rgb(219, 216, 216);
+}
+.content{
+  margin-left: 25%;
+  text-align: center;
+}
+
+/* home */
+#welcome-message{
+  margin-top: 20px;
+}
+
+/*footer*/
+.footer{
+  background-color: rgb(46, 44, 44);
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  height: 30px;
+}
+
+/* register */
+.user-form{
+  width: 40%;
+  margin-left: 30%;
+}
+.form-label{
+  float: left;
+}
+.form-control{
+  box-shadow: 1px 1px 1px black;
+}
+.password-hint{
+  color: rgb(212, 209, 209);
+}
+.user-submit{
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid;
+  width: 28%;
+  height: 40px;
+  transition: background-color 0.5s;
+}
+.user-submit:hover{
+  background-color: rgb(107, 39, 170);
+}
+.user-cancel{
+  color: white;
+  margin-left: 5%;
+  transition: color 0.5s;
+}
+.user-cancel:hover{
+  color: rgb(197, 196, 196);
+  text-decoration: none;
+}
+
+/* profile */
+.profile-table{
+  background-color: blueviolet;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 5px;  
+  margin-top: 8%;
+  box-shadow: 1px 1px rgb(37, 37, 37);
+}
+.profile-table tr{
+  height: 40px;
+}
+#dark-tr{
+  background-color: rgb(106, 40, 168);
+  height: 60px;
+}
+.profile-button{
+  border-radius: 5px;
+  color: white;
+  border: 1px solid;
+  width: 40%;
+  height: 40px;
+  transition: background-color 0.5s;
+  margin-bottom: 10px;
+}
+#profile-edit{
+  background-color: rgb(121, 173, 42);
+  border: none;
+  transition: background-color 0.5s;
+}
+#profile-edit:hover{
+  background-color: rgb(88, 122, 37);
+}
+#profile-delete{
+  background-color: rgb(173, 33, 33);
+  border: none;
+  transition: background-color 0.5s;
+}
+#profile-delete:hover{
+  background-color: rgb(119, 27, 27);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
